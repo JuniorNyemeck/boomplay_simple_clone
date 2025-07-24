@@ -15,6 +15,25 @@ class Album{
     ajouterChanson(chanson) {
         this.chansons.push(chanson);
     }
+
+    removeLastSong() {
+        if (this.chansons.length > 0) {
+            this.chansons.pop();
+        }
+    }
+
+    addSongAtStart(song) {
+        this.chansons.unshift(song);
+    }
+
+    removeFirstSong() {
+        if (this.chansons.length > 0) {
+            this.chansons.shift();
+        }
+    }
+
+
+
     getNombreChansons() {
         return this.chansons.length;
     }

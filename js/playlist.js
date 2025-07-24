@@ -13,13 +13,17 @@ class Playlist {
 
     removeSong(song) {
         const index = this.chansons.indexOf(song);
-        if (index > -1) {
+        if (index != -1) {
             this.chansons.splice(index, 1);
         }
     }
 
     getChansons() {
         return this.chansons;
+    }
+
+    getNbChansons() {
+        return this.chansons.length;
     }
 }
 
