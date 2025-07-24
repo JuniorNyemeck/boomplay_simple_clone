@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boomplay Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation latérale pour desktop -->
+        <nav class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">♪</div>
+                <h1>Boomplay</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active" data-page="home">
+                    <span class="nav-icon">⌂</span>
+                    <span class="nav-text">Accueil</span>
+                </li>
+                <li class="nav-item" data-page="new">
+                    <span class="nav-icon">✦</span>
+                    <span class="nav-text">Nouveautés</span>
+                </li>
+                <li class="nav-item" data-page="genre">
+                    <span class="nav-icon">♫</span>
+                    <span class="nav-text">Genres</span>
+                </li>
+                <li class="nav-item" data-page="artist">
+                    <span class="nav-icon">♪</span>
+                    <span class="nav-text">Artistes</span>
+                </li>
+                <li class="nav-item" data-page="library">
+                    <span class="nav-icon">♥</span>
+                    <span class="nav-text">Ma Bibliothèque</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Navigation mobile (bottom) -->
+        <nav class="bottom-nav">
+            <div class="nav-item active" data-page="home">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-text">Accueil</span>
+            </div>
+            <div class="nav-item" data-page="new">
+                <span class="nav-icon">✦</span>
+                <span class="nav-text">Nouveautés</span>
+            </div>
+            <div class="nav-item" data-page="genre">
+                <span class="nav-icon">♫</span>
+                <span class="nav-text">Genres</span>
+            </div>
+            <div class="nav-item" data-page="artist">
+                <span class="nav-icon">♪</span>
+                <span class="nav-text">Artistes</span>
+            </div>
+            <div class="nav-item" data-page="library">
+                <span class="nav-icon">♥</span>
+                <span class="nav-text">Bibliothèque</span>
+            </div>
+        </nav>
+
+        <!-- Contenu principal -->
+        <main class="main-content">
+            <!-- Page Home -->
+            <section id="home" class="page active">
+                <header class="page-header">
+                    <h2>Tendances</h2>
+                    <div class="search-bar">
+                        <span class="search-icon">⌕</span>
+                        <input type="text" placeholder="Rechercher une chanson, un artiste...">
+                    </div>
+                </header>
+
+                <!-- Bannière promotionnelle -->
+                <div class="hero-banner">
+                    <div class="banner-content">
+                        <h3>Découvrez les hits du moment</h3>
+                        <p>Les morceaux les plus écoutés cette semaine</p>
+                        <button class="btn-primary">Écouter maintenant</button>
+                    </div>
+                    <div class="banner-image">
+                        <div class="placeholder-image">♪</div>
+                    </div>
+                </div>
+
+                <!-- Chansons en tendance -->
+                <div class="section">
+                    <h3>Top 10 cette semaine</h3>
+                    <div class="songs-grid">
+                        <div class="song-card">
+                            <div class="song-image">
+                                <div class="placeholder-image">♪</div>
+                                <button class="play-btn">▶</button>
+                            </div>
+                            <div class="song-info">
+                                <h4>Est-ce que tu m'aimes</h4>
+                                <p>Gims</p>
+                                <span class="duration">3:24</span>
+                            </div>
+                            <button class="like-btn">♥</button>
+                        </div>
+                        <div class="song-card">
+                            <div class="song-image">
+                                <div class="placeholder-image">♪</div>
+                                <button class="play-btn">▶</button>
+                            </div>
+                            <div class="song-info">
+                                <h4>Amnésie</h4>
+                                <p>Damso</p>
+                                <span class="duration">3:02</span>
+                            </div>
+                            <button class="like-btn">♥</button>
+                        </div>
+                        <div class="song-card">
+                            <div class="song-image">
+                                <div class="placeholder-image">♪</div>
+                                <button class="play-btn">▶</button>
+                            </div>
+                            <div class="song-info">
+                                <h4>La Même</h4>
+                                <p>Gims feat. Vianney</p>
+                                <span class="duration">3:15</span>
+                            </div>
+                            <button class="like-btn">♥</button>
+                        </div>
+                        <div class="song-card">
+                            <div class="song-image">
+                                <div class="placeholder-image">♪</div>
+                                <button class="play-btn">▶</button>
+                            </div>
+                            <div class="song-info">
+                                <h4>Θ. Macarena</h4>
+                                <p>Damso</p>
+                                <span class="duration">4:18</span>
+                            </div>
+                            <button class="like-btn">♥</button>
+                        </div>
+                        <div class="song-card">
+                            <div class="song-image">
+                                <div class="placeholder-image">♪</div>
+                                <button class="play-btn">▶</button>
+                            </div>
+                            <div class="song-info">
+                                <h4>Love Nwantinti</h4>
+                                <p>CKay feat. Axel & DJ Yo!</p>
+                                <span class="duration">3:59</span>
+                            </div>
+                            <button class="like-btn">♥</button>
+                        </div>
+                        <div class="song-card">
+                            <div class="song-image">
+                                <div class="placeholder-image">♪</div>
+                                <button class="play-btn">▶</button>
+                            </div>
+                            <div class="song-info">
+                                <h4>Buga</h4>
+                                <p>Kizz Daniel feat. Tekno</p>
+                                <span class="duration">2:48</span>
+                            </div>
+                            <button class="like-btn">♥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Playlists récentes -->
+                <div class="section">
+                    <h3>Playlists populaires</h3>
+                    <div class="playlists-grid">
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <div class="placeholder-image">♫</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Afrobeats Hits</h4>
+                                <p>125 titres • Mis à jour</p>
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <div class="placeholder-image">♫</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>New School</h4>
+                                <p>89 titres • Nouvelle génération</p>
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <div class="playlist-image">
+                                <div class="placeholder-image">♫</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Chill Vibes</h4>
+                                <p>67 titres • Détente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Page New -->
+            <section id="new" class="page">
+                <!-- Bannière Nouveautés -->
+                <div class="page-banner">
+                    <div class="banner-content">
+                        <h3>Dernières Sorties</h3>
+                        <p>Découvrez les nouveautés de vos artistes préférés</p>
+                    </div>
+                    <div class="banner-image">
+                        <div class="placeholder-image">♪</div>
+                    </div>
+                </div>
+
+                <header class="page-header">
+                    <h2>Nouveautés</h2>
+                    <div class="filter-tabs">
+                        <button class="tab-btn active">Cette semaine</button>
+                        <button class="tab-btn">Ce mois-ci</button>
+                        <button class="tab-btn">Albums</button>
+                    </div>
+                </header>
+
+                <div class="new-releases">
+                    <div class="release-card">
+                        <div class="release-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="release-date">28/12</div>
+                        </div>
+                        <div class="release-info">
+                            <h4>Spider</h4>
+                            <p>Gims feat. Dystinct</p>
+                            <span class="release-type">Single</span>
+                        </div>
+                        <button class="play-btn-small">▶</button>
+                    </div>
+                    <div class="release-card">
+                        <div class="release-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="release-date">27/12</div>
+                        </div>
+                        <div class="release-info">
+                            <h4>Démons</h4>
+                            <p>Damso</p>
+                            <span class="release-type">Single</span>
+                        </div>
+                        <button class="play-btn-small">▶</button>
+                    </div>
+                    <div class="release-card">
+                        <div class="release-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="release-date">26/12</div>
+                        </div>
+                        <div class="release-info">
+                            <h4>Miami Vice</h4>
+                            <p>Gims</p>
+                            <span class="release-type">Single</span>
+                        </div>
+                        <button class="play-btn-small">▶</button>
+                    </div>
+                    <div class="release-card">
+                        <div class="release-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="release-date">25/12</div>
+                        </div>
+                        <div class="release-info">
+                            <h4>N. J Respect R</h4>
+                            <p>Damso</p>
+                            <span class="release-type">Single</span>
+                        </div>
+                        <button class="play-btn-small">▶</button>
+                    </div>
+                    <div class="release-card">
+                        <div class="release-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="release-date">24/12</div>
+                        </div>
+                        <div class="release-info">
+                            <h4>Finesse</h4>
+                            <p>Pheelz feat. BNXN</p>
+                            <span class="release-type">Album</span>
+                        </div>
+                        <button class="play-btn-small">▶</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Page Genre -->
+            <section id="genre" class="page">
+                <!-- Bannière Genres -->
+                <div class="page-banner">
+                    <div class="banner-content">
+                        <h3>Explorez par Genre</h3>
+                        <p>Trouvez votre style musical préféré</p>
+                    </div>
+                    <div class="banner-image">
+                        <div class="placeholder-image">♫</div>
+                    </div>
+                </div>
+
+                <header class="page-header">
+                    <h2>Genres musicaux</h2>
+                </header>
+
+                <div class="genres-grid">
+                    <div class="genre-card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+                        <h3>Afrobeats</h3>
+                        <p>245 artistes</p>
+                        <div class="genre-icon">♪</div>
+                    </div>
+                    <div class="genre-card" style="background: linear-gradient(135deg, #00a8ff, #0078ff);">
+                        <h3>Pop</h3>
+                        <p>189 artistes</p>
+                        <div class="genre-icon">♫</div>
+                    </div>
+                    <div class="genre-card" style="background: linear-gradient(135deg, #32CD32, #228B22);">
+                        <h3>Hip-Hop</h3>
+                        <p>167 artistes</p>
+                        <div class="genre-icon">♬</div>
+                    </div>
+                    <div class="genre-card" style="background: linear-gradient(135deg, #ff9ff3, #f368e0);">
+                        <h3>R&B</h3>
+                        <p>134 artistes</p>
+                        <div class="genre-icon">♭</div>
+                    </div>
+                    <div class="genre-card" style="background: linear-gradient(135deg, #feca57, #ff9ff3);">
+                        <h3>Gospel</h3>
+                        <p>98 artistes</p>
+                        <div class="genre-icon">♯</div>
+                    </div>
+                    <div class="genre-card" style="background: linear-gradient(135deg, #00d2d3, #01a3a4);">
+                        <h3>Highlife</h3>
+                        <p>87 artistes</p>
+                        <div class="genre-icon">♩</div>
+                    </div>
+                    <div class="genre-card" style="background: linear-gradient(135deg, #ff6348, #e17055);">
+                        <h3>Reggae</h3>
+                        <p>76 artistes</p>
+                        <div class="genre-icon">♪</div>
+                    </div>
+                    <div class="genre-card" style="background: linear-gradient(135deg, #a4b0be, #747d8c);">
+                        <h3>Jazz</h3>
+                        <p>65 artistes</p>
+                        <div class="genre-icon">♫</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Page Artist -->
+            <section id="artist" class="page">
+                <!-- Bannière Artistes -->
+                <div class="page-banner">
+                    <div class="banner-content">
+                        <h3>Artistes Populaires</h3>
+                        <p>Suivez vos artistes préférés</p>
+                    </div>
+                    <div class="banner-image">
+                        <div class="placeholder-image">♪</div>
+                    </div>
+                </div>
+
+                <header class="page-header">
+                    <h2>Artistes populaires</h2>
+                    <div class="filter-tabs">
+                        <button class="tab-btn active">Tendance</button>
+                        <button class="tab-btn">Nouveaux</button>
+                        <button class="tab-btn">Locaux</button>
+                    </div>
+                </header>
+
+                <div class="artists-grid">
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="artist-badge">★</div>
+                        </div>
+                        <div class="artist-info">
+                            <h4>Gims</h4>
+                            <p>3.2M abonnés</p>
+                            <span class="genre-tag">Rap/Pop</span>
+                        </div>
+                        <button class="follow-btn">Suivre</button>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="artist-badge">★</div>
+                        </div>
+                        <div class="artist-info">
+                            <h4>Damso</h4>
+                            <p>2.8M abonnés</p>
+                            <span class="genre-tag">Rap</span>
+                        </div>
+                        <button class="follow-btn">Suivre</button>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="artist-badge">★</div>
+                        </div>
+                        <div class="artist-info">
+                            <h4>Burna Boy</h4>
+                            <p>2.4M abonnés</p>
+                            <span class="genre-tag">Afrobeats</span>
+                        </div>
+                        <button class="follow-btn">Suivre</button>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="artist-badge">★</div>
+                        </div>
+                        <div class="artist-info">
+                            <h4>Tems</h4>
+                            <p>1.5M abonnés</p>
+                            <span class="genre-tag">R&B</span>
+                        </div>
+                        <button class="follow-btn">Suivre</button>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="artist-badge">★</div>
+                        </div>
+                        <div class="artist-info">
+                            <h4>Rema</h4>
+                            <p>2.2M abonnés</p>
+                            <span class="genre-tag">Afrobeats</span>
+                        </div>
+                        <button class="follow-btn">Suivre</button>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-image">
+                            <div class="placeholder-image">♪</div>
+                            <div class="artist-badge">★</div>
+                        </div>
+                        <div class="artist-info">
+                            <h4>Fireboy DML</h4>
+                            <p>1.9M abonnés</p>
+                            <span class="genre-tag">Afrobeats</span>
+                        </div>
+                        <button class="follow-btn">Suivre</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Page Library -->
+            <section id="library" class="page">
+                <!-- Bannière Bibliothèque -->
+                <div class="page-banner">
+                    <div class="banner-content">
+                        <h3>Ma Bibliothèque Musicale</h3>
+                        <p>Gérez vos playlists et musiques favorites</p>
+                        <button class="btn-primary" id="create-playlist-btn">Créer une Playlist</button>
+                    </div>
+                    <div class="banner-image">
+                        <div class="placeholder-image">♥</div>
+                    </div>
+                </div>
+
+                <header class="page-header">
+                    <h2>Ma Bibliothèque</h2>
+                    <div class="library-stats">
+                        <span>248 titres • 16h 32min • 12 playlists</span>
+                    </div>
+                </header>
+
+                <div class="library-tabs">
+                    <button class="tab-btn active">Récemment écoutés</button>
+                    <button class="tab-btn">Favoris</button>
+                    <button class="tab-btn">Playlists</button>
+                    <button class="tab-btn">Téléchargés</button>
+                    <button class="tab-btn">Artistes</button>
+                </div>
+
+                <!-- Filtres et tri -->
+                <div class="library-controls">
+                    <div class="sort-controls">
+                        <label>Trier par:</label>
+                        <select id="sort-select">
+                            <option value="recent">Récemment ajouté</option>
+                            <option value="artist">Artiste</option>
+                            <option value="title">Titre</option>
+                            <option value="duration">Durée</option>
+                            <option value="plays">Nombre d'écoutes</option>
+                        </select>
+                    </div>
+                    <div class="view-controls">
+                        <button class="view-btn active" data-view="list">Liste</button>
+                        <button class="view-btn" data-view="grid">Grille</button>
+                    </div>
+                </div>
+
+                <div class="library-content">
+                    <div class="library-item">
+                        <div class="item-image">
+                            <div class="placeholder-image">♪</div>
+                        </div>
+                        <div class="item-info">
+                            <h4>Est-ce que tu m'aimes</h4>
+                            <p>Gims</p>
+                            <span class="play-count">Écouté 12 fois</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="action-btn">▶</button>
+                            <button class="action-btn add-to-playlist" title="Ajouter à une playlist">+</button>
+                            <button class="action-btn">⬇</button>
+                            <button class="action-btn active">♥</button>
+                        </div>
+                    </div>
+                    <div class="library-item">
+                        <div class="item-image">
+                            <div class="placeholder-image">♪</div>
+                        </div>
+                        <div class="item-info">
+                            <h4>Amnésie</h4>
+                            <p>Damso</p>
+                            <span class="play-count">Écouté 8 fois</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="action-btn">▶</button>
+                            <button class="action-btn add-to-playlist" title="Ajouter à une playlist">+</button>
+                            <button class="action-btn">⬇</button>
+                            <button class="action-btn active">♥</button>
+                        </div>
+                    </div>
+                    <div class="library-item">
+                        <div class="item-image">
+                            <div class="placeholder-image">♪</div>
+                        </div>
+                        <div class="item-info">
+                            <h4>La Même</h4>
+                            <p>Gims feat. Vianney</p>
+                            <span class="play-count">Écouté 15 fois</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="action-btn">▶</button>
+                            <button class="action-btn add-to-playlist" title="Ajouter à une playlist">+</button>
+                            <button class="action-btn active">⬇</button>
+                            <button class="action-btn active">♥</button>
+                        </div>
+                    </div>
+                    <div class="library-item">
+                        <div class="item-image">
+                            <div class="placeholder-image">♪</div>
+                        </div>
+                        <div class="item-info">
+                            <h4>Θ. Macarena</h4>
+                            <p>Damso</p>
+                            <span class="play-count">Écouté 21 fois</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="action-btn">▶</button>
+                            <button class="action-btn add-to-playlist" title="Ajouter à une playlist">+</button>
+                            <button class="action-btn">⬇</button>
+                            <button class="action-btn active">♥</button>
+                        </div>
+                    </div>
+                    <div class="library-item">
+                        <div class="item-image">
+                            <div class="placeholder-image">♪</div>
+                        </div>
+                        <div class="item-info">
+                            <h4>Buga</h4>
+                            <p>Kizz Daniel feat. Tekno</p>
+                            <span class="play-count">Écouté 6 fois</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="action-btn">▶</button>
+                            <button class="action-btn add-to-playlist" title="Ajouter à une playlist">+</button>
+                            <button class="action-btn">⬇</button>
+                            <button class="action-btn active">♥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>Playlists créées</h3>
+                    <div class="user-playlists">
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <div class="placeholder-image">♫</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Mes favoris</h4>
+                                <p>45 titres • Créée par vous</p>
+                            </div>
+                            <div class="playlist-actions">
+                                <button class="action-btn edit-playlist" title="Modifier">✎</button>
+                                <button class="action-btn delete-playlist" title="Supprimer">×</button>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <div class="placeholder-image">♫</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Workout</h4>
+                                <p>32 titres • Créée par vous</p>
+                            </div>
+                            <div class="playlist-actions">
+                                <button class="action-btn edit-playlist" title="Modifier">✎</button>
+                                <button class="action-btn delete-playlist" title="Supprimer">×</button>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <div class="placeholder-image">♫</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Chill Night</h4>
+                                <p>28 titres • Créée par vous</p>
+                            </div>
+                            <div class="playlist-actions">
+                                <button class="action-btn edit-playlist" title="Modifier">✎</button>
+                                <button class="action-btn delete-playlist" title="Supprimer">×</button>
+                            </div>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-image">
+                                <div class="placeholder-image">♫</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h4>Rap Français</h4>
+                                <p>67 titres • Créée par vous</p>
+                            </div>
+                            <div class="playlist-actions">
+                                <button class="action-btn edit-playlist" title="Modifier">✎</button>
+                                <button class="action-btn delete-playlist" title="Supprimer">×</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal de création/édition de playlist -->
+        <div id="playlist-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Créer une nouvelle playlist</h3>
+                    <button class="close-modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="playlist-name">Nom de la playlist</label>
+                        <input type="text" id="playlist-name" placeholder="Ma nouvelle playlist">
+                    </div>
+                    <div class="form-group">
+                        <label for="playlist-description">Description (optionnel)</label>
+                        <textarea id="playlist-description" placeholder="Décrivez votre playlist..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Visibilité</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="visibility" value="private" checked> Privée</label>
+                            <label><input type="radio" name="visibility" value="public"> Publique</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-secondary" id="cancel-playlist">Annuler</button>
+                    <button class="btn-primary" id="save-playlist">Créer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal d'ajout à une playlist -->
+        <div id="add-to-playlist-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Ajouter à une playlist</h3>
+                    <button class="close-modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="playlist-selection">
+                        <div class="playlist-option">
+                            <input type="checkbox" id="playlist-1">
+                            <label for="playlist-1">Mes favoris</label>
+                        </div>
+                        <div class="playlist-option">
+                            <input type="checkbox" id="playlist-2">
+                            <label for="playlist-2">Workout</label>
+                        </div>
+                        <div class="playlist-option">
+                            <input type="checkbox" id="playlist-3">
+                            <label for="playlist-3">Chill Night</label>
+                        </div>
+                        <div class="playlist-option">
+                            <input type="checkbox" id="playlist-4">
+                            <label for="playlist-4">Rap Français</label>
+                        </div>
+                    </div>
+                    <button class="btn-secondary create-new-playlist">+ Créer une nouvelle playlist</button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-secondary" id="cancel-add">Annuler</button>
+                    <button class="btn-primary" id="confirm-add">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
